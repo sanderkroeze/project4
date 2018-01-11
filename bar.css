@@ -1,26 +1,70 @@
-.container {
-	display: inline-block;
-	cursor: pointer;
-}
-
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
+#nav {
     background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
+    padding-bottom: 1.6em;
+    margin: 0em;
+    border-radius: 0.5em;
+    overflow: hidden;
+    position: fixed;
+    top: 4.5em;
+    width: 15em;
+    float: left;
 }
 
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
+ul {
+    list-style-type: none;
+    margin: 0em;
+    padding: 0em;
+    width: 12.5em;
+    background-color: #efefef;
 }
 
-.change .bar2 {
-    opacity: 0;
+li {
+    display: inline;
+    font-size: 1.2em;
+    float: left;
+    margin-right: white;
 }
 
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
+li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background: #333;
+    padding: 1.2em 1.4em;
+}
+
+li:hover a {
+    background-color: #555;
+}
+
+.dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: none;
+    background-color: #333;
+    min-width: 10em;
+    box-shadow: 0em, 0,5em, 1em, 0em rgba (0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 0.75em 1em;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #333;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #333;
 }

@@ -1,62 +1,107 @@
 body {
-	padding: 0px;
+	padding: 0em;
 	margin: auto;
 }
 
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	width: 16em;
-	background-color: #333;
-}
 
-li {
-	display: inline;
-	padding: 0.8em;
-	font-size: 1.2em;
-}
-
-li a {
-	display: block;
-	text-decoration: none;
-	color: white;
-	text-align: center;
-	padding: 1.2em 1.4em;
-}
-
-li a:hover {
-	background-color: #555;
-	color: white; 
-}
-
-.active {
-	background-color: #F02E06;
-	color: white;
-}
-
-#nav {
-	background-color: #333;
-	padding-bottom: 1.6em;
-	margin: 0em;
-	border-radius: 0.5em;
-	overflow: hidden;
-	position: fixed;
-	top: 4.5em;
-	width: 15em;
-	float: left;
-}
 
 .column1, .column2, .column3, .column4 {
-	margin: 0em;
-	width: 83,2em;
+	width: 41,6em;
 	text-align: center;
 	background-color: #333;
+}
+
+.clear {
+	clear: initial;
+}
+
+.column7 {
+	width: 40%;
+	height: 55%;
+	text-align: center;
+	background-color: #333;
+	clear: right;	
+}
+
+.column6 {
+	background-color: #333;
+	text-align: center;
+	height: 1.4em;
+}
+
+.column2 {
+	background-color: #333;
+	text-align: center;
+	height: 1.4em;
+	width: 50%;
+}
+
+p.clear {
+	clear: both;
 }
 
 h1 {
 	color: white;
 }
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 0.875em 1em;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0em;
+	padding: 0em;
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%
+}
+
+li a:hover:not(.active) {
+	background-color: #111;
+}
+
+.active {
+	background-color: #D02806;
+}
+
+
+#nav {
+	background-color: #333;
+	border: 0,5em;
+	overflow: hidden;
+	position: relative;
+	top: 0em;
+	width: 67,5em;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+p {
+	color: white;
+	width: 41,6em;
+}
+
+
+
+
 
 @font-face{
     font-family: 'MyWebFont';
@@ -67,3 +112,4 @@ h1 {
 div{
     font-family: MyWebFont;
 }
+
