@@ -1,121 +1,89 @@
 <!DOCTYPE html>
 <HTML>
+<!-- C  Sander Kroeze - www.uw-website.com -->
 <HEAD>
-    <META content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <LINK href="Project4.css" rel="stylesheet" type="text/css" />
-    <TITLE>Home</TITLE>
 
-</head>
-<body>	
+    <META http-equiv="refresh" content="5" />
 
-
-<div id="menu">
-	<div class="nav">
+    <META content="text/html; charset=utf-8"  http-equiv="Content-Type"  />
+    <LINK href="project4.css"  rel="stylesheet"  type="text/css"  />
+    <TITLE> Basiscursus HTML5</TITLE>
+</HEAD>
+<BODY background="achtergrond34.jpg">
+	<div id="header">
+		<img src="Colicss.png" width="350">
+	<div id="nav">
 		<ul>
-			<img src="Colicss.png" class="right" width="150px">
-			<li><a class="active" href="">Algemene informatie</a></li>
-			<li><a href="">Informatie over hosting</a></li>
-			<li><a href="">Informatie over Cloud</a></li>
-			<li><a href="">Contact pagina</a></li>
-			<li><a href="">Klantenpagina</a></li>
-			<li><a href="">Social media</a></li>
-			<li><a href="">Foto's</a></li>
+			<li class="lettertype"><a class="active" href="">Home</a></li>
+			<li class="lettertype"><a href="file:///C:/Users/sande/OneDrive%20-%20ROC%20Alfa-college/Leerjaar%201/niveau%204/Periode%202/Project/Project%204/Html/Informatie%20over%20hosting/info%20hosting.html">Informatie over hosting</a></li>
+			<li class="lettertype"><a href="">Informatie over de Cloud</a></li>
+			<li class="lettertype"><a href="">Contactpagina</a></li>
+			<li class="lettertype"><a href="">Klantenpagina</a></li>
+			<li class="lettertype"><a href="">Social media</a></li>
 		</ul>
 	</div>
-</div>
-
-
-
-<div class="column6" style="padding:70px;margin-top: 25px; background-color: #D02806">
-	<h1>Algemene Informatie</h1>
-</div>
-
-<div class="column7" class="left">
-	<p> Colicss is een innovatief en vernieuwend bedrijf uit Slagharen dat zich vooral bezighoudt met hosting en sinds kort ook de cloud. Het bedrijf gaat onder leiding van Rob Sieljes al een poos flink voor de wind en zijn binnen twee jaar gegroeid van een eenmanszaak naar een bedrijf met zes man personeel.
-
-	Onlangs hebben ze nog een prijs gewonnen voor beste innovatie binnen de hosting door samen te werken met het Alfa-college. In dit project hebben studenten van het Alfa-college een hostingomgeving opgezet met daarop een testwebsite. Het panel van deze prijs vond de samenwerking zo gaaf, dat ze de prijs beste innovatie hebben gewonnen. </p>
-</div>
-
-
-<div class="right" class="column2">
-
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-		<body>
-
-		<div class="w3-container">
-		  <h2>Slideshow</h2>
-
-
+<div id="content">
+	<div class="aritcle column1">
 		<div class="w3-content w3-display-container">
 
-		<div class="w3-display-container mySlides">
-		  <img src="Colicss.png" style="height: 350px" width="450px">
-		  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-		    Colicss logo
-		  </div>
-		</div>
-
-		<div class="w3-display-container mySlides">
-		  <img src="cloudhost.jpg" style="height: 350px" width="450px">
-		  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
-		    cloud hosting
-		  </div>
-		</div>
-
-		<div class="w3-display-container mySlides">
-		  <img src="srvroom.jpg" style="height: 350px" width="450px">
-		  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
-		   	server room
-		  </div>
-		</div>
+			<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
 
 
-		<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-		<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+			<div class="w3-display-container mySlides">
+			  <img src="cloudhost.jpg" style="width:100%">
+			  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+			    <p>Cloudhosting</p>
+			  </div>
+			</div>
 
+			<div class="w3-display-container mySlides">
+			  <img src="srvroom.jpg" style="width:100%">
+			  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+			    <p>Server Ruimte</p>
+			  </div>
+			</div>
 	</div>
 </div>
 
-	<script>
-	var slideIndex = 1;
-	showDivs(slideIndex);
 
-	function plusDivs(n) {
-	  showDivs(slideIndex += n);
-	}
+<div class="article column2">
+		<p>Colicss is een innovatief en vernieuwend bedrijf uit Slagharen dat zich vooral bezighoudt met hosting en sinds kort ook de cloud. Het bedrijf gaat onder leiding van Rob Sieljes al een poos flink voor de wind en zijn binnen twee jaar gegroeid van een eenmanszaak naar een bedrijf met zes man personeel.
 
-	function showDivs(n) {
-	  var i;
-	  var x = document.getElementsByClassName("mySlides");
-	  if (n > x.length) {slideIndex = 1}    
-	  if (n < 1) {slideIndex = x.length}
-	  for (i = 0; i < x.length; i++) {
-	     x[i].style.display = "none";  
-	  }
-	  x[slideIndex-1].style.display = "block";  
-	}
-	</script>
+		Onlangs hebben ze nog een prijs gewonnen voor beste innovatie binnen de hosting door samen te werken met het Alfa-college. In dit project hebben studenten van het Alfa-college een hostingomgeving opgezet met daarop een testwebsite. Het panel van deze prijs vond de samenwerking zo gaaf, dat ze de prijs beste innovatie hebben gewonnen.</p>
+</div>
+
+</div>
+
+</div>
 
 
-			
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
 
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
 
-
-
-</body>
-
-
-
-	
-
-
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
 
 
 
+<div class="footer">
+	<p>© Colicss</p>
+</div>
 
-
-
-
-
-</body>
+	<script src="javascriptproject1.js" rel="text/javascript"></script>
+</BODY>
+</HTML>

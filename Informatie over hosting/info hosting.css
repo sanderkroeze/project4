@@ -15,11 +15,23 @@ body{
 
 }
 
-.column1, .column2, .column3, .column4, .column5, .column6 {
+.column3, .column4, .column5, .column6 {
 	width: 48%;
 	float: left;
 	margin: 0.625em;
+	text-align: center;
 }
+
+.column1{
+	width: 100%;
+	text-align: center;
+}
+
+.column2{
+	width: 100%;
+	text-align: center;
+}
+
 
 ul{
 	color: white;
@@ -33,6 +45,7 @@ ul{
 li{
 	color: white;
 	float: left;
+	font-size: 150%;
 }
 
 .lettertype{
@@ -54,6 +67,11 @@ li a:hover{
 p{
 	color: white;
 	font-size: 120%;
+}
+
+h2{
+	color: white;
+	font-size: 175%;
 }
 
 .active{
@@ -80,5 +98,3 @@ div{
 	padding: 0.625em;
 	margin: 0.625em;
 }
-
-
