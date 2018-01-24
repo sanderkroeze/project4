@@ -1,0 +1,67 @@
+table.blueTable {
+  border: 1px solid white;
+  background-color: #333;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.blueTable td, table.blueTable th {
+  border: 1px solid white;
+  padding: 3px 2px;
+}
+table.blueTable tbody td {
+  font-size: 13px;
+}
+table.blueTable tr:nth-child(even) {
+  background: #333;
+}
+table.blueTable thead {
+  background: #333;
+  background: -moz-linear-gradient(top, #333 0%, #327cad 66%, #333 100%);
+  background: -webkit-linear-gradient(top, #611111 0%, #611111 66%, #1C6EA4 100%);
+  background: linear-gradient(to bottom, #611111 0%, #611111 66%, #bf1e26 100%);
+  border-bottom: 2px solid white;
+}
+table.blueTable thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border-left: 2px solid white;
+}
+table.blueTable thead th:first-child {
+  border-left: none;
+}
+
+table.blueTable tfoot {
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #333;
+  background: -moz-linear-gradient(top, #333 0%, #333 66%, #333 100%);
+  background: -webkit-linear-gradient(top, #333 0%, #333 66%, #333 100%);
+  background: linear-gradient(to bottom, #333 0%, #333 66%, #333 100%);
+  border-top: 2px solid white;
+}
+table.blueTable tfoot td {
+  font-size: 14px;
+}
+table.blueTable tfoot .links {
+  text-align: right;
+}
+table.blueTable tfoot .links a{
+  display: inline-block;
+  background: #333;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+th {
+  color: white;
+  font-size: 200%;
+}
+
+td{
+  color: white;
+  font-size: 200%;
+}
