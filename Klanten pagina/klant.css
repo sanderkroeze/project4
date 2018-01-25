@@ -12,18 +12,34 @@ body{
 #nav, #feature, #footer{
 	background-color: #7B7270;
 	margin: 0.625em;
-	text-align: center;
+
 }
 
-.column4, .column5, .column6 {
-	width: 48%;
-	float: left;
+.column6 {
+	width: 99%;
 	margin: 0.625em;
 	text-align: center;
 }
 
+.column4{
+	width: 35%;
+	float: left;
+	height: 10%;
+}
+
+.column5{
+	width: 50%;
+	float: left;
+}
+
+.column8{
+	width: 15%;
+	float: left;
+	text-align: center;
+}
+
 .column3 {
-	width: 60%;
+	width: 30%;
 	float: center;
 	float: left;
 }
@@ -51,12 +67,11 @@ ul{
 li{
 	color: white;
 	float: left;
-	text-align: center;
 	font-size: 150%;
 }
 
 .lettertype{
-    font-size: 300%;
+    font-size: 175%;
 }
 
 li a{
@@ -71,11 +86,18 @@ li a:hover{
 	background-color: #111;
 }
 
-
+p{
+	color: white;
+	font-size: 120%;
+}
 
 h2{
 	color: white;
 	font-size: 175%;
+}
+
+h1 {
+	color: white;
 }
 
 .active{
@@ -100,5 +122,5 @@ div{
 	text-align: center;
 	background-color: #7B7270;
 	padding: 0.625em;
-	margin: 0 10 10 10em;
+	margin: 0.625em;
 }
