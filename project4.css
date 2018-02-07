@@ -10,15 +10,25 @@ body{
 }
 
 #nav, #feature, #footer{
-	background-color: #7B7270;
+	background-color: #333;
 	margin: 0.625em;
 
 }
 
-.column1, .column2, .column3, .column4, .column5, .column6 {
-	width: 48%;
+#nav ul{
+	display: inline-block;
+	list-style-type: none;
+	background-color: #333;
+}
+
+.column1, .column3, .column4, .column5, .column6 {
+	width: 100%;
 	float: left;
-	margin: 0.625em;
+}
+
+.column2 {
+	width: 100%;
+	float: middle;
 }
 
 ul{
@@ -33,11 +43,11 @@ ul{
 li{
 	color: white;
 	float: left;
+	font-size: 120%;
+	border-bottom: 1px solid #494a5a;
 }
 
-.lettertype{
-    font-size: 175%;
-}
+
 
 li a{
 	display: block;
@@ -82,8 +92,22 @@ div{
 	text-align: center;
 	background-color: #7B7270;
 	padding: 0.625em;
-	margin: 0.625em;
+	margin: 0em;
 }
 
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width:80%;
+  }
+  .right {
+    width:100%;
+  }
+}
 
-
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}

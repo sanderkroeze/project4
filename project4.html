@@ -16,38 +16,55 @@
 		<ul>
 			<li class="lettertype"><a class="active" href="">Home</a></li>
 			<li class="lettertype"><a href="file:///C:/Users/sande/OneDrive%20-%20ROC%20Alfa-college/Leerjaar%201/niveau%204/Periode%202/Project/Project%204/Html/Informatie%20over%20hosting/info%20hosting.html">Informatie over hosting</a></li>
-			<li class="lettertype"><a href="file:///C:/Users/sande/OneDrive%20-%20ROC%20Alfa-college/Leerjaar%201/niveau%204/Periode%202/Project/Project%204/Html/Informatie%20over%20de%20cloud/info%20cloud.html">Informatie over de Cloud</a></li>
-			<li class="lettertype"><a href="Contact pagina">Contactpagina</a></li>
+			<li class="lettertype"><a href="file:///C:/Users/sande/OneDrive%20-%20ROC%20Alfa-college/Leerjaar%201/niveau%204/Periode%202/Project/Project%204/Html/Informatie%20over%20de%20cloud/cloud.html#">Informatie over de Cloud</a></li>
+			<li class="lettertype"><a href="file:///C:/Users/sande/OneDrive%20-%20ROC%20Alfa-college/Leerjaar%201/niveau%204/Periode%202/Project/Project%204/Html/Contact%20pagina/contact.html">Contactpagina</a></li>
 			<li class="lettertype"><a href="file:///C:/Users/sande/OneDrive%20-%20ROC%20Alfa-college/Leerjaar%201/niveau%204/Periode%202/Project/Project%204/Html/Klanten%20pagina/klant.html">Klantenpagina</a></li>
 			<li class="lettertype"><a href="file:///C:/Users/sande/OneDrive%20-%20ROC%20Alfa-college/Leerjaar%201/niveau%204/Periode%202/Project/Project%204/Html/Social%20media/Socialmedia.html">Social media</a></li>
 		</ul>
 	</div>
 <div id="content">
-	<div class="aritcle column1">
-		<div class="w3-content w3-display-container">
 
-			<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-			<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
-
-
-			<div class="w3-display-container mySlides">
-			  <img src="cloudhost.jpg" style="width:100%">
-			  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-			    <p>Cloudhosting</p>
-			  </div>
-			</div>
-
-			<div class="w3-display-container mySlides">
-			  <img src="srvroom.jpg" style="width:100%">
-			  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
-			    <p>Server Ruimte</p>
-			  </div>
-			</div>
+	<div class="carousel" class="mySlides" class="myIndex" class="myIndex-1">
+		<center>
 	</div>
-</div>
 
 
-<div class="article column2">
+
+
+	<center>
+		<div class="w3-content w3-section" style="max-width:500px">
+		  <img class="mySlides" src="cloudhost.jpg" style="width:100%">
+		  <img class="mySlides" src="srvroom.jpg" style="width:100%">
+		</div>
+	</center>
+
+
+
+
+		<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		    var i;
+		    var x = document.getElementsByClassName("mySlides");
+		    for (i = 0; i < x.length; i++) {
+		       x[i].style.display = "none";  
+		    }
+		    myIndex++;
+		    if (myIndex > x.length) {myIndex = 1}    
+		    x[myIndex-1].style.display = "block";  
+		    setTimeout(carousel, 2000); // Change image every 2 seconds
+		}
+		</script>
+
+
+
+
+
+
+
+<div class="article column1">
 		<h1>Over Colicss</h1>
 		<p>Colicss is een innovatief en vernieuwend bedrijf uit Slagharen dat zich vooral bezighoudt met hosting en sinds kort ook de cloud. Het bedrijf gaat onder leiding van Rob Sieljes al een poos flink voor de wind en zijn binnen twee jaar gegroeid van een eenmanszaak naar een bedrijf met zes man personeel.
 
@@ -58,26 +75,6 @@
 
 </div>
 
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
 
 
 

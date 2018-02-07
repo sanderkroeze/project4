@@ -4,10 +4,10 @@
 <HEAD>
 
     <META  content="5" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <META content="text/html; charset=utf-8"  http-equiv="Content-Type"  />
     <LINK href="socialmedia.css"  rel="stylesheet"  type="text/css"  />
-    <LINK href="cloud.css"  rel="stylesheet"  type="text/css"  />
     <TITLE> Basiscursus HTML5</TITLE>
 </HEAD>
 <BODY background="achtergrond34.jpg">
@@ -18,17 +18,61 @@
 		<ul>
 			<li class="lettertype"><a href="file:///C:/Users/sande/OneDrive%20-%20ROC%20Alfa-college/Leerjaar%201/niveau%204/Periode%202/Project/Project%204/Html/project4.html">Home</a></li>
 			<li class="lettertype"><a href="file:///C:/Users/sande/OneDrive%20-%20ROC%20Alfa-college/Leerjaar%201/niveau%204/Periode%202/Project/Project%204/Html/Informatie%20over%20hosting/info%20hosting.html">Informatie over hosting</a></li>
-			<li class="lettertype"><a  href="file:///C:/Users/sande/OneDrive%20-%20ROC%20Alfa-college/Leerjaar%201/niveau%204/Periode%202/Project/Project%204/Html/Informatie%20over%20de%20cloud/info%20cloud.html">Informatie over de Cloud</a></li>
+			<li class="lettertype"><a  href="file:///C:/Users/sande/OneDrive%20-%20ROC%20Alfa-college/Leerjaar%201/niveau%204/Periode%202/Project/Project%204/Html/Informatie%20over%20de%20cloud/cloud.html#">Informatie over de Cloud</a></li>
 			<li class="lettertype"><a href="file:///C:/Users/sande/OneDrive%20-%20ROC%20Alfa-college/Leerjaar%201/niveau%204/Periode%202/Project/Project%204/Html/Contact%20pagina/contact.html">Contactpagina</a></li>
 			<li class="lettertype"><a href="file:///C:/Users/sande/OneDrive%20-%20ROC%20Alfa-college/Leerjaar%201/niveau%204/Periode%202/Project/Project%204/Html/Klanten%20pagina/klant.html">Klantenpagina</a></li>
 			<li class="lettertype"><a class="active" href="">Social media</a></li>
 		</ul>
 	</div>
 
+<div id="content">
+
 	<div class="article column6">
-		<img src="discord-logo.png" width="300">
-		<img src="twitter-logo.png" width="300">
-</div>
+		    <a class="twitter-timeline"  href="https://twitter.com/hashtag/colicss" data-widget-id="957913595353948161">#colicss Tweets</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+
+
+
+    <div class="article column4">
+		<div class="w3-content w3-section">
+		  <img class="mySlides" src="Colicss.png" style="width:95%">
+		  <img class="mySlides" src="discord-colicss2.png" style="width:95%">
+		  <img class="mySlides" src="discord-colicss.png" style="width:95%">
+		</div>
+
+		<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		    var i;
+		    var x = document.getElementsByClassName("mySlides");
+		    for (i = 0; i < x.length; i++) {
+		       x[i].style.display = "none";  
+		    }
+		    myIndex++;
+		    if (myIndex > x.length) {myIndex = 1}    
+		    x[myIndex-1].style.display = "block";  
+		    setTimeout(carousel, 3000); // Change image every 3 seconds
+		}
+		</script>
+	</div>
+
+
+
+          
+
+
+	<div class="article column2">
+			<a href="https://twitter.com/?lang=en"><img src="twitter-logo.png"></a>
+			<p><a onclick="test()" href="https://discord.gg/7RXfrAf"><img src="discord-logo.png"></a></p>
+
+			<p>Volg ons op twitter of join onze discord voor advies!</p>
+		</div>
+	</div>
+
+
 
 
 
@@ -42,5 +86,6 @@
 </div>
 
 	<script src="javascriptproject1.js" rel="text/javascript"></script>
+	<script src="test.js" rel="text/javascript"></script>
 </BODY>
 </HTML>

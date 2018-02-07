@@ -10,9 +10,15 @@ body{
 }
 
 #nav, #feature, #footer{
-	background-color: #7B7270;
+	background-color: #333;
 	margin: 0.625em;
 
+}
+
+#nav ul{
+	display: inline-block;
+	list-style-type: none;
+	background-color: #333;
 }
 
 .column6 {
@@ -68,12 +74,10 @@ ul{
 li{
 	color: white;
 	float: left;
-	font-size: 150%;
+	font-size: 120%;
+	border-bottom: 1px solid #494a5a;
 }
 
-.lettertype{
-    font-size: 175%;
-}
 
 li a{
 	display: block;
@@ -123,5 +127,22 @@ div{
 	text-align: center;
 	background-color: #7B7270;
 	padding: 0.625em;
-	margin: 0.625em;
+	margin: 0em;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width:80%;
+  }
+  .right {
+    width:100%;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
 }
